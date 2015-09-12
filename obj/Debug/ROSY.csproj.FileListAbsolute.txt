@@ -1,0 +1,11 @@
+c:\users\adam\documents\visual studio 2015\Projects\ROSY\ROSY\bin\Debug\ROSY.exe.config
+c:\users\adam\documents\visual studio 2015\Projects\ROSY\ROSY\bin\Debug\ROSY.exe
+c:\users\adam\documents\visual studio 2015\Projects\ROSY\ROSY\bin\Debug\ROSY.pdb
+c:\users\adam\documents\visual studio 2015\Projects\ROSY\ROSY\obj\Debug\ROSY.ROSY_mainwindow.resources
+c:\users\adam\documents\visual studio 2015\Projects\ROSY\ROSY\obj\Debug\ROSY.Properties.Resources.resources
+c:\users\adam\documents\visual studio 2015\Projects\ROSY\ROSY\obj\Debug\ROSY.csproj.GenerateResource.Cache
+c:\users\adam\documents\visual studio 2015\Projects\ROSY\ROSY\obj\Debug\ROSY.exe
+c:\users\adam\documents\visual studio 2015\Projects\ROSY\ROSY\obj\Debug\ROSY.pdb
+c:\users\adam\documents\visual studio 2015\Projects\ROSY\ROSY\obj\Debug\ROSY.AboutBox.resources
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\ROSY\ROSY\obj\Debug\ROSY.progress.resources
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\ROSY\ROSY\obj\Debug\ROSY.csprojResolveAssemblyReference.cache
