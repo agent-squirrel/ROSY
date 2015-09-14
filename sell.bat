@@ -6,6 +6,8 @@ REM #             THIS FILE IS PART OF ROSY              #
 REM #             An OSIRiS Project component            #
 REM #                  COPYRIGHT NOTICE                  #
 REM #         Copyright Adam Heathcote 2014 - 2015.      #
+REM #OSIRiS and associated documentation are distributed #
+REM #       under the GNU General Public License.        #
 REM ######################################################
 
 cls
@@ -66,14 +68,11 @@ wmic useraccount where "name='%~1'" set PasswordExpires=FALSE > NUL 2>&1
 echo Call out to PowerShell to set registry values.
 SET "ThisScriptsDirectory=%~dp0"
 SET "PowerShellScriptPath=%ThisScriptsDirectory%powershellregclean.ps1"
-
-:: Check system Architecture version so we can call the correct version of Powershell.
-reg Query "HKLM\Hardware\Description\System\CentralProcessor\0" | find /i "x86" > NUL && set OS=32BIT || set OS=64BIT
 :: This Powershell path may seem odd because it is calling the 64bit version of powershell.exe instead of the default 32bit version.
 :: If this is not done and powershell.exe is called by simply invoking 'powershell', then it will load the 32bit registry and the
 :: paths we need to edit won't exist.
-if %OS%==64BIT C:\windows\sysnative\windowspowershell\v1.0\powershell.exe -NonInteractive -executionpolicy Bypass -file "%PowerShellScriptPath%"  > NUL 2>&1
-if %OS%==32BIT powershell.exe -NonInteractive -executionpolicy Bypass -file "%PowerShellScriptPath%"  > NUL 2>&1
+if %OSARC%==64BIT C:\windows\sysnative\windowspowershell\v1.0\powershell.exe -NonInteractive -executionpolicy Bypass -file "%PowerShellScriptPath%"  > NUL 2>&1
+if %OSARC%==32BIT powershell.exe -NonInteractive -executionpolicy Bypass -file "%PowerShellScriptPath%"  > NUL 2>&1
 
 DEL userlist.txt > NUL 2>&1
 DEL userlisttrimmed.txt > NUL 2>&1
@@ -92,8 +91,8 @@ echo Copying Cleanup Files
 :: Copy over a script to facilitate cleanup operations, post reboot.
 :: Schedule a task to run on first boot that launches the cleanup script.
 copy "%~dp0\cleanup.bat" C:\profiles\cleanup.bat > NUL 2>&1
-copy "%~dp0\usercleanup.bat" C:\profiles\usercleanup.bat > NUL 2>&1
 schtasks /create /F /tn "Cleanup" /tr C:\profiles\cleanup.bat /sc onlogon /RL HIGHEST /RU "%~1" > NUL 2>&1
+
 
 echo Deleting Scheduled Tasks
 :: Delete all of the existing scheduled tasks.

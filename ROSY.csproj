@@ -104,7 +104,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <EmbeddedResource Include="sell.bat" />
-    <EmbeddedResource Include="usercleanup.bat" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

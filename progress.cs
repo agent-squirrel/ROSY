@@ -41,10 +41,6 @@ namespace ROSY
             {
                 File.Delete(@"cleanup.bat");
             }
-            if (File.Exists(@"usercleanup.bat"))
-            {
-                File.Delete(@"usercleanup.bat");
-            }
             if (File.Exists(@"powershellregclean.ps1"))
             {
                 File.Delete(@"powershellregclean.ps1");
@@ -65,8 +61,7 @@ namespace ROSY
             List<string> files = new List<string>();
             files.Add("cleanup.bat");
             files.Add("powershellregclean.ps1"); 
-            files.Add("sell.bat"); 
-            files.Add("usercleanup.bat"); 
+            files.Add("sell.bat");  
 
             //Grab the embedded batch files and powershell scripts and write them out to disk.
             ExtractEmbeddedResource(@".","ROSY", files);

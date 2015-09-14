@@ -1,7 +1,6 @@
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\ROSY\ROSY\bin\Release\ROSY.exe.config
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\ROSY\ROSY\bin\Release\ROSY.exe
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\ROSY\ROSY\bin\Release\ROSY.pdb
-C:\Users\Adam\Documents\Visual Studio 2015\Projects\ROSY\ROSY\obj\Release\ROSY.csprojResolveAssemblyReference.cache
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\ROSY\ROSY\obj\Release\ROSY.AboutBox.resources
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\ROSY\ROSY\obj\Release\ROSY.progress.resources
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\ROSY\ROSY\obj\Release\ROSY.ROSY_mainwindow.resources
