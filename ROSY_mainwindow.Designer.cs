@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ROSY_mainwindow));
             this.about_button = new System.Windows.Forms.Button();
             this.runbutton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.newusername = new System.Windows.Forms.TextBox();
             this.newuserlabel = new System.Windows.Forms.Label();
+            this.tooltip = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,6 +48,7 @@
             this.about_button.Size = new System.Drawing.Size(74, 31);
             this.about_button.TabIndex = 1;
             this.about_button.Text = "About";
+            this.tooltip.SetToolTip(this.about_button, "About ROSY");
             this.about_button.UseVisualStyleBackColor = true;
             this.about_button.Click += new System.EventHandler(this.about_button_Click);
             // 
@@ -55,8 +58,9 @@
             this.runbutton.Location = new System.Drawing.Point(210, 163);
             this.runbutton.Name = "runbutton";
             this.runbutton.Size = new System.Drawing.Size(75, 32);
-            this.runbutton.TabIndex = 2;
+            this.runbutton.TabIndex = 3;
             this.runbutton.Text = "Run";
+            this.tooltip.SetToolTip(this.runbutton, "Click here to begin the reset process");
             this.runbutton.UseVisualStyleBackColor = true;
             this.runbutton.Click += new System.EventHandler(this.runbutton_Click);
             // 
@@ -78,7 +82,8 @@
             this.newusername.MaxLength = 20;
             this.newusername.Name = "newusername";
             this.newusername.Size = new System.Drawing.Size(100, 27);
-            this.newusername.TabIndex = 3;
+            this.newusername.TabIndex = 2;
+            this.tooltip.SetToolTip(this.newusername, "Enter a new User Name for your New Account");
             // 
             // newuserlabel
             // 
@@ -89,6 +94,7 @@
             this.newuserlabel.Size = new System.Drawing.Size(119, 20);
             this.newuserlabel.TabIndex = 4;
             this.newuserlabel.Text = "New User Name:";
+            this.tooltip.SetToolTip(this.newuserlabel, "Enter a new User Name for your New Account");
             // 
             // ROSY_mainwindow
             // 
@@ -122,6 +128,7 @@
         private System.Windows.Forms.Button runbutton;
         private System.Windows.Forms.TextBox newusername;
         private System.Windows.Forms.Label newuserlabel;
+        private System.Windows.Forms.ToolTip tooltip;
     }
 }
 
