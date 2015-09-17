@@ -32,10 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ROSY_mainwindow));
             this.about_button = new System.Windows.Forms.Button();
             this.runbutton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.newusername = new System.Windows.Forms.TextBox();
             this.newuserlabel = new System.Windows.Forms.Label();
             this.tooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,17 +64,6 @@
             this.runbutton.UseVisualStyleBackColor = true;
             this.runbutton.Click += new System.EventHandler(this.runbutton_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = global::ROSY.Properties.Resources.rosy_logo_cropped_fw;
-            this.pictureBox1.Location = new System.Drawing.Point(147, 12);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 114);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // newusername
             // 
             this.newusername.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -95,6 +84,17 @@
             this.newuserlabel.TabIndex = 4;
             this.newuserlabel.Text = "New User Name:";
             this.tooltip.SetToolTip(this.newuserlabel, "Enter a new User Name for your New Account");
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = global::ROSY.Properties.Resources.rosy_logo_minature_fw;
+            this.pictureBox1.Location = new System.Drawing.Point(147, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 114);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // ROSY_mainwindow
             // 
