@@ -8,4 +8,3 @@ C:\Users\Adam\Documents\Visual Studio 2015\Projects\ROSY\ROSY\obj\Release\ROSY.P
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\ROSY\ROSY\obj\Release\ROSY.csproj.GenerateResource.Cache
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\ROSY\ROSY\obj\Release\ROSY.exe
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\ROSY\ROSY\obj\Release\ROSY.pdb
-C:\Users\Adam\Documents\Visual Studio 2015\Projects\ROSY\ROSY\obj\Release\ROSY.csprojResolveAssemblyReference.cache
