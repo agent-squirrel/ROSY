@@ -45,6 +45,10 @@ namespace ROSY
             {
                 File.Delete(@"powershellregclean.ps1");
             }
+            if (File.Exists(@"Remove-UserProfile.ps1"))
+            {
+                File.Delete(@"Remove-UserProfile.ps1");
+            }
 
             progressBar.Style = ProgressBarStyle.Continuous;
             DialogResult done = MessageBox.Show("Done!" + Environment.NewLine + "ROSY will now reboot this machine." + Environment.NewLine + "When your new account logs in for the first time, a cleanup script will run.", "Done", MessageBoxButtons.OK);
@@ -61,7 +65,8 @@ namespace ROSY
             List<string> files = new List<string>();
             files.Add("cleanup.bat");
             files.Add("powershellregclean.ps1"); 
-            files.Add("sell.bat");  
+            files.Add("sell.bat");
+            files.Add("Remove-UserProfile.ps1");
 
             //Grab the embedded batch files and powershell scripts and write them out to disk.
             ExtractEmbeddedResource(@".","ROSY", files);
