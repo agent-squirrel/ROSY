@@ -47,11 +47,11 @@
             // namelabel
             // 
             this.namelabel.AutoSize = true;
-            this.namelabel.Location = new System.Drawing.Point(22, 14);
+            this.namelabel.Location = new System.Drawing.Point(38, 14);
             this.namelabel.Name = "namelabel";
-            this.namelabel.Size = new System.Drawing.Size(227, 40);
+            this.namelabel.Size = new System.Drawing.Size(195, 40);
             this.namelabel.TabIndex = 1;
-            this.namelabel.Text = "Copyright Adam Heathcote 2015\r\nROSY";
+            this.namelabel.Text = "Copyright Adam Heathcote \r\n2014 - 2016";
             this.namelabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // sluglabel
